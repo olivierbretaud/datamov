@@ -4,7 +4,7 @@
 			<div class="movies-container">
 				<h3 class="go-back"><v-icon large class="arrow">keyboard_arrow_left</v-icon>Retour à la recherche</h3>
 				<v-layout row wrap>
-					<v-flex v-for="i in 6" :key="`4${i}`" md4  xs12 >
+					<v-flex v-for="i in 6" :key="`4${i}`" lg4 md6  xs12 >
 						<img src="./assets/Graph1.svg" class="movie-block" />
 						<h2>Mon film</h2>
 					</v-flex>
@@ -60,7 +60,11 @@ export default {
 	color: #606060;
 	padding-top: 5px;
 	padding-bottom: 8px;
-	border-top: 0.10em solid #606060
+	border-top: 0.10em solid #606060;
+}
+
+.sub-title:hover {
+	color: #bdbaba;
 }
 
 .emotion-container {
@@ -74,6 +78,10 @@ export default {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+
+.emotion-item:hover {
+	color: #bdbaba;;
 }
 
 .circle {
@@ -124,7 +132,37 @@ export default {
   /* box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 10px 10px 10px 10px rgba(0,0,0,.12); */
 }
 
+@media screen and (max-width: 1150px) {
+	.aside {
+		width: 30%;
+	}
+	.movies-container {
+		width: 70%
+	}
+}
 
+@media screen and (max-width: 800px) {
+	.aside {
+		width: 40%;
+	}
+	.movies-container {
+		width: 60%
+	}
+	.go-back {
+		margin-top: 10px;
+	}
+}
 
+@media screen and (max-width: 600px) {
+	.aside {
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+		min-height:  70%;
+	}
+	.movies-container {
+		width: 100%
+	}
+}
 
 </style>

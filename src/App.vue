@@ -20,13 +20,18 @@ export default {
 
 <style>
 #app {
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-top: 64px;
-  text-align: center;
-  color: white;
-  min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding-top: 64px;
+	text-align: center;
+	color: white;
+	min-height: 100vh;
 }
 
+@media screen and (max-width: 959px) {
+	#app {
+		padding-top: 48px;
+	}
+}
 </style>
