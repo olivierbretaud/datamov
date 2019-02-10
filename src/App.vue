@@ -1,20 +1,20 @@
 <template>
-  <v-app dark>
-    <Navbar/>
-    <DisplaySearch />
-  </v-app>
+	<v-app dark>
+		<Navbar/>
+		<transition name="slide-fade">
+			<router-view/>
+		</transition>
+	</v-app>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-import DisplaySearch from './components/DisplaySearch.vue'
 
-export default {
-  name: 'app',
-  components: {
-    Navbar,
-    DisplaySearch
-  }
+export default  {
+	name: 'app',
+	components: {
+		Navbar,
+	}
 }
 </script>
 
@@ -26,7 +26,26 @@ export default {
 	padding-top: 64px;
 	text-align: center;
 	color: white;
-	min-height: 100vh;
+}
+
+a {
+	color: transparent !important;
+}
+
+.text-grey {
+	color: #606060;
+}
+
+.slide-fade-enter-active {
+	transition: all 2s ease;
+}
+.slide-fade-leave-active {
+	transition: all 0.2s ease
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+	transform: translateX(200px);
+	opacity: 0;
 }
 
 @media screen and (max-width: 959px) {

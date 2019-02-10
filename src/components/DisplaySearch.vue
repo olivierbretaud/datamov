@@ -1,51 +1,55 @@
 <template>
-	<v-container fluid>
-		<v-layout row wrap>
-			<div class="movies-container">
-				<h3 class="go-back"><v-icon large class="arrow">keyboard_arrow_left</v-icon>Retour à la recherche</h3>
-				<v-layout row wrap>
-					<v-flex v-for="i in 6" :key="`4${i}`" lg4 md6  xs12 >
-						<img src="./assets/Graph1.svg" class="movie-block" />
-						<h2>Mon film</h2>
-					</v-flex>
-				</v-layout>
-			</div>
-			<div class="aside">
-				<div class="emotion-container">
-					<h2>Émotions</h2>
-					<div class="emotion-item">
-						<h3>La joie</h3>
-						<div class="circle" style="background-color:yellow;"></div>
-					</div>
-					<div class="emotion-item">
-						<h3>La Tristesse</h3>
-						<div class="circle" style="background-color:#3db0d5;"></div>
-					</div>
-					<div class="emotion-item">
-						<h3>La Peur</h3>
-						<div class="circle" style="background-color:#cc385b;"></div>
-					</div>
-					<div class="emotion-item">
-						<h3>Le Stress</h3>
-						<div class="circle" style="background-color:#f07d0c;"></div>
-					</div>
-					<div class="emotion-item">
-						<h3>L'Emerveillement</h3>
-						<div class="circle" style="background-color:#3da84b;"></div>
-					</div>
-					<div class="emotion-item">
-						<h3>La Surprise</h3>
-						<div class="circle" style="background-color:#884192;"></div>
-					</div>
+	<div>
+		<v-container fluid>
+			<v-layout row wrap>
+				<div class="movies-container">
+					<router-link to="/">
+						<h3 class="go-back"><v-icon large class="arrow">keyboard_arrow_left</v-icon>Retour à la recherche</h3>
+					</router-link>
+					<v-layout row wrap>
+						<v-flex v-for="i in 6" :key="`4${i}`" lg4 md6  xs12 >
+							<img src="./assets/Graph1.svg" class="movie-block" />
+							<h2>Mon film</h2>
+						</v-flex>
+					</v-layout>
 				</div>
-				<h2 class="sub-title">Rythmique de la narration</h2>
-				<h2 class="sub-title">Audio </h2>
-				<h2 class="sub-title">Cadrage</h2>
-				<h2 class="sub-title">Temporalité </h2>
-				<h2 class="sub-title">Vocabulaire</h2>
-			</div>
-		</v-layout>
-	</v-container>
+				<div class="aside">
+					<div class="emotion-container">
+						<h2>Émotions</h2>
+						<div class="emotion-item">
+							<h3>La joie</h3>
+							<div class="circle" style="background-color:yellow;"></div>
+						</div>
+						<div class="emotion-item">
+							<h3>La Tristesse</h3>
+							<div class="circle" style="background-color:#3db0d5;"></div>
+						</div>
+						<div class="emotion-item">
+							<h3>La Peur</h3>
+							<div class="circle" style="background-color:#cc385b;"></div>
+						</div>
+						<div class="emotion-item">
+							<h3>Le Stress</h3>
+							<div class="circle" style="background-color:#f07d0c;"></div>
+						</div>
+						<div class="emotion-item">
+							<h3>L'Emerveillement</h3>
+							<div class="circle" style="background-color:#3da84b;"></div>
+						</div>
+						<div class="emotion-item">
+							<h3>La Surprise</h3>
+							<div class="circle" style="background-color:#884192;"></div>
+						</div>
+					</div>
+					<h2 class="sub-title">Rythmique de la narration</h2>
+					<h2 class="sub-title">Audio </h2>
+					<h2 class="sub-title">Cadrage</h2>
+					<h2 class="sub-title">Temporalité </h2>
+					<h2 class="sub-title">Vocabulaire</h2>
+				</div>
+			</v-layout>
+		</v-container>
+	</div>
 </template>
 
 <script>
@@ -95,7 +99,7 @@ export default {
 .go-back {
 	color: #606060;
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
 
 .arrow {
@@ -104,7 +108,6 @@ export default {
 
 .movies-container {
 	width: 80%;
-	min-height: 100vh;
 }
 
 .movie-block {
