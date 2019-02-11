@@ -1,0 +1,118 @@
+{
+  "movies" : [
+    {
+      "title" : "Inception",
+      "images" : {
+        "radar": "inception-radar.svg",
+        "chart": "inception-chart.svg"
+      },
+      "emotions": {
+        "joy": "0",
+        "sadness": "0",
+        "fear": "0",
+        "serenity": "0",
+        "wonder": "0",
+        "slurs" : "0"
+      },
+      "contents": {
+        "offensive" : "0",
+        "adult" : "0"
+      }
+    },
+    {
+      "title": "The Artist",
+      "images" : {
+        "radar": "the-artist-radar.svg",
+        "chart": "the-artist-chart.svg"
+      },
+      "emotions": {
+        "joy": "0",
+        "sadness": "0",
+        "fear": "0",
+        "serenity": "0",
+        "wonder": "0",
+        "slurs" : "0"
+      },
+      "contents": {
+        "offensive" : "0",
+        "adult" : "0"
+      }
+    },
+    {
+      "title": "Coco",
+      "images" : {
+        "radar": "coco-radar.svg",
+        "chart": "coco-chart.svg"
+      },
+      "emotions": {
+        "joy": "0",
+        "sadness": "0",
+        "fear": "0",
+        "serenity": "0",
+        "wonder": "0",
+        "slurs" : "0"
+      },
+      "contents": {
+        "offensive" : "0",
+        "adult" : "0"
+      }
+    },
+    {
+      "title" : "Fight Club",
+      "images" : {
+        "radar": "fight-club-radar.svg",
+        "chart": "fight-club-chart.svg"
+      },
+      "emotions": {
+        "joy": "0",
+        "sadness": "0",
+        "fear": "0",
+        "serenity": "0",
+        "wonder": "0",
+        "slurs" : "0"
+      },
+      "contents": {
+        "offensive" : "0",
+        "adult" : "0"
+      }
+    },
+    {
+      "title": "Saw",
+      "images" : {
+        "radar": "saw-radar.svg",
+        "chart": "saw-chart.svg"
+      },
+      "emotions": {
+        "joy": "0",
+        "sadness": "0",
+        "fear": "0",
+        "serenity": "0",
+        "wonder": "0",
+        "slurs" : "0"
+      },
+      "contents": {
+        "offensive" : "0",
+        "adult" : "0"
+      }
+    },
+    {
+      "title": "Into The Wild",
+      "images" : {
+        "radar": "into-the-wild-radar.svg",
+        "chart": "into-the-wild-chart.svg"
+      },
+      "emotions": {
+        "joy": "0",
+        "sadness": "0",
+        "fear": "0",
+        "serenity": "0",
+        "wonder": "0",
+        "slurs" : "0"
+      },
+      "contents": {
+        "offensive" : "0",
+        "adult" : "0"
+      }
+    }
+  ]
+}

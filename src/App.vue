@@ -28,6 +28,10 @@ export default  {
 	color: white;
 }
 
+.theme--dark.application {
+	background: #0F0F16 !important;
+}
+
 a {
 	color: transparent !important;
 }

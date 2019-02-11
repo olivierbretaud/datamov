@@ -8,7 +8,7 @@
 					</router-link>
 					<v-layout row wrap>
 							<v-flex  v-for="data in movies" v-bind:key="data.title"  lg4 md6  xs12 >
-								<img :src="`images/${data.images.radar}`" class="movie-block" />
+								<img :src="`images/${data.images.chart}`" class="movie-block" />
 								<h2 class="mb-3">{{  data.title }}</h2>
 								<!-- <h4>{{  data.title }}</h4> -->
 							</v-flex>
@@ -43,9 +43,7 @@
 						</div>
 					</div>
 					<h2 class="sub-title">Rythmique de la narration</h2>
-					<router-link to="/displayAudio">
-						<h2 class="sub-title">Audio </h2>
-					</router-link>
+					<h2 class="sub-title">Audio </h2>
 					<h2 class="sub-title">Cadrage</h2>
 					<h2 class="sub-title">Temporalité </h2>
 					<h2 class="sub-title">Vocabulaire</h2>
@@ -59,7 +57,7 @@
 import data from './assets/movies.json'
 
 export default {
-	name: 'DisplaySearch',
+	name: 'DisplayAudio',
 	data() {
 		return {
 			movies: data.movies

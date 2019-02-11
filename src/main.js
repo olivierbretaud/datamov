@@ -4,6 +4,7 @@ import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
 import 'vuetify/dist/vuetify.min.css' ;
 
+import DisplayAudio from './components/DisplayAudio.vue'
 import DisplaySearch from './components/DisplaySearch.vue'
 import Search from './components/Search.vue'
 
@@ -14,6 +15,7 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter)
 
 const routes = [
+	{path: "/displayAudio", component: DisplayAudio},
 	{path: "/displaySearch", component: DisplaySearch},
 	{path: "/", component: Search}
 ]
