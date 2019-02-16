@@ -2,6 +2,7 @@
   "movies" : [
     {
       "title" : "Inception",
+      "info": "Christopher Nolan,  2010",
       "images" : {
         "radar": "inception-radar.svg",
         "chart": "inception-chart.svg"
@@ -21,6 +22,7 @@
     },
     {
       "title": "The Artist",
+      "info": " Michel Hazanavicius, 2011",
       "images" : {
         "radar": "the-artist-radar.svg",
         "chart": "the-artist-chart.svg"
@@ -40,6 +42,7 @@
     },
     {
       "title": "Coco",
+      "info": "Lee Unkirch, 2017",
       "images" : {
         "radar": "coco-radar.svg",
         "chart": "coco-chart.svg"
@@ -59,6 +62,7 @@
     },
     {
       "title" : "Fight Club",
+      "info": "David Fincher, 1999",
       "images" : {
         "radar": "fight-club-radar.svg",
         "chart": "fight-club-chart.svg"
@@ -78,6 +82,7 @@
     },
     {
       "title": "Saw",
+      "info": "James Wan, 2005",
       "images" : {
         "radar": "saw-radar.svg",
         "chart": "saw-chart.svg"
@@ -97,6 +102,7 @@
     },
     {
       "title": "Into The Wild",
+      "info": "Sean Penn, 2008",
       "images" : {
         "radar": "into-the-wild-radar.svg",
         "chart": "into-the-wild-chart.svg"

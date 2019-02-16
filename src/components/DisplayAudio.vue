@@ -3,7 +3,7 @@
 		<v-container fluid>
 			<v-layout row wrap>
 				<div class="movies-container">
-					<router-link to="/">
+					<router-link to="/search">
 						<h3 class="go-back"><v-icon large class="arrow">keyboard_arrow_left</v-icon>Retour à la recherche</h3>
 					</router-link>
 					<v-layout row wrap>
@@ -16,37 +16,29 @@
 				</div>
 				<div class="aside">
 					<div class="emotion-container">
-						<h2>Émotions</h2>
-						<div class="emotion-item">
-							<h3>La joie</h3>
-							<div class="circle" style="background-color:yellow;"></div>
-						</div>
-						<div class="emotion-item">
-							<h3>La Tristesse</h3>
-							<div class="circle" style="background-color:#3db0d5;"></div>
-						</div>
-						<div class="emotion-item">
-							<h3>La Peur</h3>
-							<div class="circle" style="background-color:#cc385b;"></div>
-						</div>
-						<div class="emotion-item">
-							<h3>Le Stress</h3>
-							<div class="circle" style="background-color:#f07d0c;"></div>
-						</div>
-						<div class="emotion-item">
-							<h3>L'Emerveillement</h3>
-							<div class="circle" style="background-color:#3da84b;"></div>
-						</div>
-						<div class="emotion-item">
-							<h3>La Surprise</h3>
-							<div class="circle" style="background-color:#884192;"></div>
-						</div>
+					<h2 class="audio-title">Audio </h2>
+					<div class="emotion-item">
+							<h3 class="text-legend">Dialogues</h3>
+							<div class="audio-legend" style="background: linear-gradient(0.25turn,  #b51abb, #ff7400);"></div>
 					</div>
+					<div class="emotion-item">
+							<h3 class="text-legend">Musique</h3>
+							<div class="audio-legend" style="background: linear-gradient(0.25turn,  #00afd4, #00a749);"></div>
+					</div>
+					<div class="emotion-item">
+							<h3 class="text-legend">Sons diverses</h3>
+							<div class="audio-legend" style="background: linear-gradient(0.25turn,  #ffaf31, #ff7400);"></div>
+					</div>
+					</div>
+					<router-link to="/displaySearch">
+						<h2 class="sub-title" >Émotions</h2>
+					</router-link>
 					<h2 class="sub-title">Rythmique de la narration</h2>
-					<h2 class="sub-title">Audio </h2>
 					<h2 class="sub-title">Cadrage</h2>
 					<h2 class="sub-title">Temporalité </h2>
 					<h2 class="sub-title">Vocabulaire</h2>
+					<h2 class="sub-title">Screamers</h2>
+					<h2 class="sub-title">Séquences sensuelles</h2>
 				</div>
 			</v-layout>
 		</v-container>
@@ -63,6 +55,12 @@ export default {
 			movies: data.movies
 		};
 	},
+	created:  function () {
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	}
 }
 </script>
 
@@ -75,12 +73,22 @@ export default {
 	border-top: 0.10em solid #3b3b3b;
 }
 
-.sub-title:hover {
+.sub-title:hover  {
 	color: #bdbaba;
 }
 
-.emotion-container {
-	margin-bottom: 20px;
+.audio-title {
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+
+.text-grey {
+	color: #3b3b3b;
+}
+
+.text-white {
+	color: white;
 }
 
 .emotion-item {
@@ -93,15 +101,20 @@ export default {
 }
 
 .emotion-item:hover {
-	color: #bdbaba;;
+	color: #bdbaba;
 }
 
-.circle {
+.text-legend {
+	color: #bdbaba;
+	font-size: 16px;
+}
+
+.audio-legend {
 	margin-top: 2px;
-	margin-left: 8px;
-	width: 12px;
+	margin-left: 20px;
+	width: 80px;
 	border-radius: 10px;
-	height: 12px;
+	height: 6px;
 }
 
 .go-back {

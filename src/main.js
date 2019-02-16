@@ -7,6 +7,7 @@ import 'vuetify/dist/vuetify.min.css' ;
 import DisplayAudio from './components/DisplayAudio.vue'
 import DisplaySearch from './components/DisplaySearch.vue'
 import Search from './components/Search.vue'
+import Home from './components/Home.vue'
 
 Vue.use(Vuetify)
 
@@ -17,7 +18,8 @@ Vue.use(VueRouter)
 const routes = [
 	{path: "/displayAudio", component: DisplayAudio},
 	{path: "/displaySearch", component: DisplaySearch},
-	{path: "/", component: Search}
+	{path: "/search", component: Search},
+	{path: "/", component: Home}
 ]
 
 const router =  new VueRouter({

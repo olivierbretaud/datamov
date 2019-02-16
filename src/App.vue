@@ -41,10 +41,10 @@ a {
 }
 
 .slide-fade-enter-active {
-	transition: all 2s ease;
+	transition: all 0.8s ease;
 }
 .slide-fade-leave-active {
-	transition: all 0.2s ease
+	transition: all 0s ease
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
@@ -55,6 +55,7 @@ a {
 @media screen and (max-width: 959px) {
 	#app {
 		padding-top: 48px;
+		background-color: #0F0F16 !important;
 	}
 }
 </style>
