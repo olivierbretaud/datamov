@@ -2,7 +2,7 @@
 	<v-toolbar fixed>
 		<img src="./assets/logo-datamov.svg" class="logo"/>
 		<v-spacer></v-spacer>
-		<router-link to="/">
+		<router-link to="/search">
 			<v-btn icon>
 				<v-icon>search</v-icon>
 			</v-btn>

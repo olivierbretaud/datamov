@@ -9,7 +9,7 @@
 					<v-layout row wrap>
 							<v-flex  v-for="data in movies" v-bind:key="data.title"  lg4 md6  xs12 >
 								<img :src="`images/${data.images.chart}`" class="movie-block" />
-								<h2 class="mb-3">{{  data.title }}</h2>
+								<h2 >{{  data.title }}</h2>
 								<h4 class="movie-info mb-3">{{  data.info }}</h4>
 							</v-flex>
 					</v-layout>

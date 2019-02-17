@@ -4,9 +4,10 @@
 	<v-container fluid >
 		<img src="./assets/logo-datamov.svg" class="logo-home"/>
 		<v-layout row wrap class="pt-4" justify-center>
-			<v-flex md4 xs12 class="ma-4 text-grey">
+			<v-flex md4 xs12 class="ma-2">
+				<h2 class="baseline">Osez un nouveau regard sur le 7<sup>ème </sup>art</h2>
 				<router-link to="/search">
-					<v-btn round  class="mt-5" >Rechercher</v-btn>
+					<v-btn round  class="mt-5" >trouver mon film</v-btn>
 				</router-link>
 			</v-flex>
 		</v-layout>
@@ -46,9 +47,16 @@ export default {
 	margin-right: 30px;
 }
 
+.baseline {
+	font-weight: 500;
+}
+
 @media screen and (max-width: 959px) {
 	.background {
 		display: none;
+	}
+	.baseline {
+		font-size: 15px;
 	}
 }
 
